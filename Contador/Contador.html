@@ -9,32 +9,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styleContador.css">
+    <link rel="stylesheet" href="../style.css">
 
     <title>Contador</title>
 </head>
 
 <body>
+    <section id="global">
+        <!-- Contenido -->
+        <header>
+            <div id="logo">
+                <p>Bi-Line</p>
+            </div>
 
-    <main>
-        <h1>Contador</h1>
-        <span class="value">0</span>
+            <nav id="menu">
+                <ul>
 
-        <div>
-            <button class="btn btn-danger"><i class="fas fa-plus"></i></button>
-            <button class="btn btn-seconday">Reset</button>
-            <button class="btn btn-success"><i class="fas fa-minus"></i></button>
-        </div>
+                    <li><a class="menu-link" href="index.html">Inicio</a></li>
+                    <li><a class="menu-link" href="formulaGeneral.html">Formula General</a></li>
+                    <li><a class="menu-link" href="#">Portafolio</a></li>
+                    <li><a class="menu-link" href="Contador/Contador.html">Contador</a></li>
 
-        <div class="imgs">
-            <img class="img enojado  hidden" src="img/enojado.png" alt="" srcset="" width="300px">
-            <img class="img feliz  hidden" src="img/feliz.png" alt="" srcset="" width="300px">
-            <img class="img serio  hidden" src="img/serio.png" alt="" srcset="" width="300px">
-        </div>
+                </ul>
+            </nav>
 
-    </main>
+        </header>
+        <section>
+
+            <h1>Contador</h1>
+            <span class="value">0</span>
+
+            <div>
+                <button class="btn btn-danger"><i class="fas fa-plus"></i></button>
+                <button class="btn btn-seconday">Reset</button>
+                <button class="btn btn-success"><i class="fas fa-minus"></i></button>
+            </div>
+
+            <div class="imgs">
+                <img class="img enojado  hidden" src="img/enojado.png" alt="" srcset="" width="300px">
+                <img class="img feliz  hidden" src="img/feliz.png" alt="" srcset="" width="300px">
+                <img class="img serio  hidden" src="img/serio.png" alt="" srcset="" width="300px">
+            </div>
 
 
-    <script src="Contador.js"></script>
+
+            <script src="Contador.js"></script>
+        </section>
+    </section>
+
 </body>
 
 </html>
