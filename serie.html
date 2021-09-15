@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Examen Final</title>
+</head>
+
+<body>
+    <!-- Contenedor global -->
+
+    <section id="global">
+        <!-- Contenido -->
+        <header>
+            <div id="logo">
+                <p>Calculo de serie Fibonacci</p>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a class="menu-link" href="index.html">Inicio</a></li>
+                    <li><a class="menu-link" href="#">Biografía</a></li>
+                    <li><a class="menu-link" href="serie.html">Serie</a></li>
+                    <li><a class="menu-link" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="contenido">
+            <p>
+                <label for="descrip">Introduce el número de caracteres que deseas ver y pulsa el botón
+                    "Calcular"</label>
+                <br><textarea id="recLim"></textarea>
+                <br><button type="button" onclick="fibonacci()">Calcular</button>
+            </p>
+            <p id="serie"><br></p>
+
+            <script>
+                function fibonacci() {
+                    var n;
+                    n = document.getElementById("recLim").value;
+                    if (isNaN(n)) {
+                        alert("Es necesario introducir numeros");
+                    } else if (n == 0) {
+                        alert("Usted a pedido 0 valores de la serie Fibonacci");
+                    } else if (n == 1) {
+                        document.getElementById("serie").innerHTML = "0";
+                    } else if (n == 2) {
+                        document.getElementById("serie").innerHTML = "0,1";
+                    } else if (n > 2) {
+                        var cadena = [0, 1]; 
+                        for (x = 2; x <= n; x++) 
+                        { 
+                            cadena.push(cadena[x - 1] + cadena[x - 2]); console.log(cadena[x]); 
+                        } 
+                        document.getElementById("serie").innerHTML = JSON.stringify(cadena);
+
+
+                        /*
+                        var cadena = [0,1];
+                        for(x=2; x <= n; x++){
+                            cadena.push(cadena[x-1] + cadena[x-2]);
+                              
+                        }
+                        document.getElementById("serie").innerHTML=cadena[x]+",";*/
+                    }
+
+                }
+            </script>
+
+            </p>
+        </section>
+
+
+        <section id="footer">
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
