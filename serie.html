@@ -21,23 +21,29 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a class="menu-link" href="index.html">Inicio</a></li>
-                    <li><a class="menu-link" href="#">Biografía</a></li>
-                    <li><a class="menu-link" href="serie.html">Serie</a></li>
-                    <li><a class="menu-link" href="#">Contacto</a></li>
+                    <li><a class="menu-link" href="../index.html">Inicio</a></li>
+                    <li><a class="menu-link" href="../formulaGeneral.html">Formula General</a></li>
+                    <li><a class="menu-link" href="serie.html">serie</a></li>
+                    <li><a class="menu-link" href="../Contador/Contador.html">Contador</a></li>
                 </ul>
             </nav>
 
         </header>
 
         <section id="contenido">
-            <p>
+            <div class="containerSerie">
+
+                <div class="descriptionSerie">
+                <p>
                 <label for="descrip">Introduce el número de caracteres que deseas ver y pulsa el botón
                     "Calcular"</label>
-                <br><textarea id="recLim"></textarea>
-                <br><button type="button" onclick="fibonacci()">Calcular</button>
-            </p>
-            <p id="serie"><br></p>
+                <br><textarea class="serieTA" style="resize: none;"  id="recLim"></textarea>
+                <br><button  class="btn_fg " type="button" onclick="fibonacci()">Calcular</button>
+                </p>
+                </div>
+
+            <p id="serie"><br> </p>
+        </div>
 
             <script>
                 function fibonacci() {
@@ -60,13 +66,6 @@
                         document.getElementById("serie").innerHTML = JSON.stringify(cadena);
 
 
-                        /*
-                        var cadena = [0,1];
-                        for(x=2; x <= n; x++){
-                            cadena.push(cadena[x-1] + cadena[x-2]);
-                              
-                        }
-                        document.getElementById("serie").innerHTML=cadena[x]+",";*/
                     }
 
                 }

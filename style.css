@@ -225,3 +225,21 @@ body {
 .sidebar__text{
     text-align: justify;
 }
+
+.serieTA{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 50px;
+    width: 300px;
+}
+
+.containerSerie{
+    display: block;
+}
+
+#serie{
+    margin-left: 8rem;
+    color: red;
+    font-weight: 600;
+    font-size: 2rem;
+}
