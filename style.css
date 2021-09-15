@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +14,12 @@
     padding: 30px;
     background: white;
     box-shadow: 0px 0px 0px 1px gray;
-    height: 800px;
+    height: auto;
 }
 
 body {
     background-image: url(img/fondo.jpg);
+    font-family: 'Poppins', sans-serif;
 }
 
 #logo {
@@ -40,7 +43,7 @@ body {
 }
 
 #menu {
-    font-family: Arial, Helvetica, sans-serif;
+    
     background-color: #333;
     width: 100%;
     text-transform: uppercase;
@@ -58,6 +61,7 @@ body {
 
 #menu ul li a {
     color: white;
+    text-decoration: none;
 }
 
 #menu ul li {
@@ -66,8 +70,9 @@ body {
 
 #post {
     width: 60%;
-    font-family: Helvetica, Arial;
+    
 }
+
 
 .post {
     padding: 5px;
@@ -107,7 +112,7 @@ body {
 }
 
 .QS {
-    font-family: Helvetica, Arial;
+    
     font-size: 1.5rem;
 }
 
@@ -126,7 +131,7 @@ body {
 }
 
 .img__person {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .title__team {
@@ -156,13 +161,13 @@ body {
 }
 
 .label_fg{
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-weight: 500;
     font-size: 1.6rem;
 }
 
 .insert{
-    font-family: Arial, Helvetica, sans-serif;
+    
     border: none;
     outline:none;
 }
@@ -179,6 +184,7 @@ body {
 }
 
 .btn_fg{
+    font-family: 'Poppins', sans-serif;
     padding: 1rem 2rem;
     font-size: 1rem;
     border-radius: .7rem;
@@ -195,4 +201,27 @@ body {
 
 .numer__result{
     font-size: 2rem;
+}
+
+#global__contador {
+    width: 65%;
+    border: 1px solid #ccc;
+    margin: 2rem auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px gray;
+    height: 800px;
+}
+
+.btns_contador{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.description__person{
+    text-align: justify;
+}
+
+.sidebar__text{
+    text-align: justify;
 }
