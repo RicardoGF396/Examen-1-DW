@@ -1,26 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
     text-decoration: none;
 }
 
-#global{
+#global {
     width: 65%;
     border: 1px solid #ccc;
     margin: 2rem auto;
     padding: 30px;
     background: white;
     box-shadow: 0px 0px 0px 1px gray;
-    height: auto;
-    
+    height: 800px;
 }
 
-body{
+body {
     background-image: url(img/fondo.jpg);
 }
 
-#logo{
+#logo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     letter-spacing: 4px;
@@ -34,13 +33,13 @@ body{
     text-transform: uppercase;
 }
 
-.menu-link{
+.menu-link {
     color: black;
     margin-right: 3rem;
     margin-left: 3rem;
 }
 
-#menu{
+#menu {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #333;
     width: 100%;
@@ -48,12 +47,12 @@ body{
     margin-bottom: 20px;
 }
 
-#menu ul{
+#menu ul {
     line-height: 46px;
-    display: flex;    
+    display: flex;
 }
 
-#menu ul li:hover{
+#menu ul li:hover {
     background-color: #15178b;
 }
 
@@ -61,95 +60,90 @@ body{
     color: white;
 }
 
-#menu ul li{
+#menu ul li {
     transition: all 300ms;
 }
 
-#post{
+#post {
     width: 60%;
-    font-family: Helvetica,Arial;
+    font-family: Helvetica, Arial;
 }
 
-.post{
+.post {
     padding: 5px;
 }
 
-.post .date{
+.post .date {
     display: block;
     color: gray;
     margin-top: 10px;
 }
 
-.post p{
+.post p {
     text-align: justify;
     margin-top: 30px;
     margin-bottom: 20px;
     line-height: 20px;
 }
 
-.imgP{
+.imgP {
     width: 300px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-#sidebar{
+#sidebar {
     margin-left: 2rem;
     margin-top: 2rem;
 }
 
-#contenido{
+#contenido {
     display: flex;
 }
 
-#sidebar{
+#sidebar {
     margin-left: 5rem;
     width: 350px;
 }
 
-.QS{
-    font-family: Helvetica,Arial;
+.QS {
+    font-family: Helvetica, Arial;
     font-size: 1.5rem;
 }
 
-.button-more{
+.button-more {
     padding: 1rem 2rem;
     color: white;
     background-color: #15178b;
-
 }
 
-.btn-link{
+.btn-link {
     margin-top: 4rem;
 }
 
-.equipo{
+.equipo {
     margin-top: 2rem;
-    
 }
 
-.img__person{
+.img__person {
     max-width: 200px;
-    
 }
 
-.title__team{
+.title__team {
     font-size: 2rem;
 }
 
-.person{
+.person {
     margin-top: 3rem;
     display: flex;
-
 }
 
-.content__person{
+.content__person {
     margin-top: 2rem;
- 
     margin-left: 2rem;
 }
 
-.name{
+.name {
     margin-bottom: 1rem;
 }
 
