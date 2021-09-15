@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Examen Final</title>
+    </head>
+    <body>
+        <!-- Contenedor global -->
+
+        <section id="global">
+            <!-- Contenido -->
+            <header>
+                <div id="logo">
+                    <p>Formula General</p>
+                </div>
+
+
+                <nav id="menu">
+                    <ul>
+                        <li><a class="menu-link" href="../index.html">Inicio</a></li>
+                    <li><a class="menu-link" href="../formulaGeneral.html">Formula General</a></li>
+                    <li><a class="menu-link" href="#">Portafolio</a></li>
+                    <li><a class="menu-link" href="../Contador/Contador.html">Contador</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+            <script>
+                //alert("Los contenedores solo admitiran numeros no intentes escribir en ellos")
+            </script>
+
+            <p> Utilizando calculadora el usuario encontrara muy fácil y rápidamente raíces de una ecuación. Al usar esta calculadora para resolver ecuaciones, el  usuario  obtendrá una resolución de su ejercicio.   
+            </p>            
+
+        <section class="formula__container" id="formula">
+
+
+            <div class="formula__content">
+
+            <label class="label_fg">A</label> <br>
+            <input class="insert" id="A" type="number"><br>
+            <div class="line"></div>
+
+            <label class="label_fg">B</label> <br>
+            <input class="insert" id="B" type="number"><br>
+            <div class="line"></div>
+
+            <label class="label_fg">C</label> <br>
+            <input class="insert" id="c"type="number"><br>
+            <div class="line"></div>
+
+                <div class="btn__container-fg">
+            <button class="btn_fg" type="button" onclick="myfucntion()">Calcular</button>
+            
+            </div>
+
+            <div class="resultados">
+                <p class="numer__result" id="x1"></p>
+                <br>
+                <p class="numer__result" id="x2"></p>
+            </div>
+
+
+
+        </div>
+        </section>
+            <script>
+                function myfucntion(params) {
+                    var a,b,c,x1,x2;
+                    // Tomar los valores del formulario desde los id de cada etiqueta
+                    a=document.getElementById("A").value;
+                    b=document.getElementById("B").value;
+                    c=document.getElementById("c").value;
+                    //segmento de validacion
+                    if(isNaN(a)||isNaN(b)||isNaN(c)){
+                        text="Es necesario introducir numeros"
+                    }else{
+                        var x1=(-parseFloat(b)+ (Math.sqrt(Math.pow(parseFloat(b), 2)- (4 *parseFloat(a)  * parseFloat(c)))) )/ (2 * parseFloat(a));
+                        var x2=((-parseFloat(b) -(Math.sqrt(Math.pow(parseFloat(b), 2)- (4 * parseFloat(a) * parseFloat(c)))))/ (2 * parseFloat(a)));
+                        
+                    }
+                   
+                   if(isNaN(x1)){
+                       alert("Para x1:Indeterminacion matematica");
+                   }
+                   else{
+                    document.getElementById("x1").innerHTML=x1;
+                   }
+                   if(isNaN(x2)){
+                       alert("Para x2: Indeterminacion matematica");
+                   }else{
+                    document.getElementById("x2").innerHTML=x2;
+                   }
+                }
+        </script>
+              
+
+
+            <section id="footer">
+
+            </section>
+
+        </section>
+
+    </body>
+</html>
