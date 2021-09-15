@@ -31,16 +31,38 @@
             <script>
                 //alert("Los contenedores solo admitiran numeros no intentes escribir en ellos")
             </script>
-            <section id="formula">
-            <label class="x" >A:</label>
-            <input id="A" type="number"><br>
-            <label >B:</label>
-            <input id="B" type="number"><br>
-            <label >C:</label>
-            <input id="c"type="number"><br>
-            <button type="button" onclick="myfucntion()">Calcular</button>
-            <p id="x1"></p>
-            <p id="x2"></p>
+
+        <section class="formula__container" id="formula">
+
+            <div class="formula__content">
+
+            <label class="label_fg">A</label> <br>
+            <input class="insert" id="A" type="number"><br>
+            <div class="line"></div>
+
+            <label class="label_fg">B</label> <br>
+            <input class="insert" id="B" type="number"><br>
+            <div class="line"></div>
+
+            <label class="label_fg">C</label> <br>
+            <input class="insert" id="c"type="number"><br>
+            <div class="line"></div>
+
+                <div class="btn__container-fg">
+            <button class="btn_fg" type="button" onclick="myfucntion()">Calcular</button>
+            
+            </div>
+
+            <div class="resultados">
+                <p class="numer__result" id="x1"></p>
+                <br>
+                <p class="numer__result" id="x2"></p>
+            </div>
+
+
+
+        </div>
+        </section>
             <script>
                 function myfucntion(params) {
                     var a,b,c,x1,x2;
@@ -70,7 +92,7 @@
                    }
                 }
         </script>
-              </section>
+              
 
 
             <section id="footer">
