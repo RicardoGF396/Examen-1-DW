@@ -7,12 +7,17 @@
 
 #global{
     width: 65%;
-    border: 1px solid black;
-    margin: 0px auto;
+    border: 1px solid #ccc;
+    margin: 2rem auto;
     padding: 30px;
     background: white;
     box-shadow: 0px 0px 0px 1px gray;
     height: auto;
+    
+}
+
+body{
+    background-image: url(img/fondo.jpg);
 }
 
 #logo{
@@ -84,6 +89,8 @@
 
 .imgP{
     width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #sidebar{
@@ -102,6 +109,7 @@
 
 .QS{
     font-family: Helvetica,Arial;
+    font-size: 1.5rem;
 }
 
 .button-more{
@@ -114,3 +122,34 @@
 .btn-link{
     margin-top: 4rem;
 }
+
+.equipo{
+    margin-top: 2rem;
+    
+}
+
+.img__person{
+    max-width: 200px;
+    
+}
+
+.title__team{
+    font-size: 2rem;
+}
+
+.person{
+    margin-top: 3rem;
+    display: flex;
+
+}
+
+.content__person{
+    margin-top: 2rem;
+ 
+    margin-left: 2rem;
+}
+
+.name{
+    margin-bottom: 1rem;
+}
+
